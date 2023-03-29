@@ -1,8 +1,8 @@
 {
-    "name": "NethyaChatBot",
-    "description": "Hello, I am Nethya An Intelligent ChatBot. If You Are Feeling Lonely, You can Always Come to me and Chat With Me!",
-    "logo": "https://te.legra.ph/file/2fee644b6a1e7f5dae648.jpg",
-    "repository": "https://github.com/TheLogicalGuy/nethya",
+    "name": "MambaChatBot",
+    "description": "Hello, I am 🄼🄰🄼🄱🄰 An Intelligent ChatBot. If You Are Feeling Lonely, You can Always Come to me and Chat With Me!",
+    "logo": "https://graph.org/file/944f3f202dd3d55483445.jpg",
+    "repository": "https://github.com/FantasticSukhi/Mamba",
     "env": {
         "BOT_TOKEN": {
             "description": "telegram bot token here",
