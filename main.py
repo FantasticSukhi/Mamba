@@ -53,9 +53,9 @@ async def addchat(_, message):
     is_kuki = kuki.find_one({"chat_id": message.chat.id})
     if not is_kuki:
         kuki.insert_one({"chat_id": message.chat.id})
-        await message.reply_text(f"✅ | Successfully\n𝙉𝙚𝙩𝙝𝙮𝙖 Chatbot of this Group is set to @{message.chat.username}\n Requested by [{message.from_user.first_name}](tg://user?id={message.from_user.id})\n© @updatesofficiall")
+        await message.reply_text(f"✅ | Successfully\n🄼🄰🄼🄱🄰 Chatbot of this Group is set to @{message.chat.username}\n Requested by [{message.from_user.first_name}](tg://user?id={message.from_user.id})\n© @MAMBA_KI_DUNIYA")
     else:
-        await message.reply_text(f"Already Setup 𝙉𝙚𝙩𝙝𝙮𝙖 Chatbot of this Group Is @{message.chat.username}")
+        await message.reply_text(f"Already Setup 🄼🄰🄼🄱🄰 Chatbot of this Group Is @{message.chat.username}")
 
 
 @bot.on_message(
@@ -76,10 +76,10 @@ async def rmchat(_, message):
             )
     is_kuki = kuki.find_one({"chat_id": message.chat.id})
     if not is_kuki:
-        await message.reply_text("Already 𝙉𝙚𝙩𝙝𝙮𝙖 ChatBot Disable")
+        await message.reply_text("Already 🄼🄰🄼🄱🄰 ChatBot Disable")
     else:
         kuki.delete_one({"chat_id": message.chat.id})
-        await message.reply_text("✅ | 𝙉𝙚𝙩𝙝𝙮𝙖 Chatbot is disable!")
+        await message.reply_text("✅ | 🄼🄰🄼🄱🄰 Chatbot is disable!")
 
 
 
@@ -190,7 +190,7 @@ async def start(client, message):
         buttons = [[InlineKeyboardButton("Support", url=f"https://t.me/{SUPPORT_GROUP}"),
                     InlineKeyboardButton("Add", url=f"t.me/{BOT_USERNAME}?startgroup=true")
                     ]]
-        Photo = "https://telegra.ph/file/23932e22ece464a1fb06e.jpg"
+        Photo = "https://graph.org/file/944f3f202dd3d55483445.jpg"
         await message.reply_photo(Photo, caption=f"Hello [{message.from_user.first_name}](tg://user?id={message.from_user.id}), Machine Learning Chat Bot that can talk about any topic in any language\n /help - Help Commands\n ", reply_markup=InlineKeyboardMarkup(buttons))
 
 
@@ -202,12 +202,12 @@ async def help(client, message):
     if message.chat.type != "private":
         buttons = InlineKeyboardMarkup(
             [[InlineKeyboardButton(text="Click here",
-                url=f"http://t.me/nethyabot?start=help_")]])
+                url=f"http://t.me/MAMBA_GBOT?start=help_")]])
         await message.reply("Contact me in PM",
                             reply_markup=buttons)
         
     else:    
-        await message.reply_text("/start - Start The Bot\n/chat - Send a message to this bot\n/setupchat - Active 𝙉𝙚𝙩𝙝𝙮𝙖 Chatbot In Group\n/removechat - Disable 𝙉𝙚𝙩𝙝𝙮𝙖 Chatbot In Group")
+        await message.reply_text("/start - Start The Bot\n/chat - Send a message to this bot\n/setupchat - Active 🄼🄰🄼🄱🄰 Chatbot In Group\n/removechat - Disable 🄼🄰🄼🄱🄰 Chatbot In Group")
 
 @bot.on_message(filters.command(["allo"], prefixes=["h"]))
 async def help(client, message):
@@ -228,7 +228,7 @@ async def help(client, message):
         await message.reply('''Hallo😂 hru? 
         Can you defeat me in chatting😏?''')
         
-@bot.on_message(filters.command(["nethyabot"], prefixes=["@"]))
+@bot.on_message(filters.command(["mamba_gbot"], prefixes=["@"]))
 async def help(client, message):
     self = await bot.get_me()
     busername = self.username
